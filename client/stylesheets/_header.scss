@@ -1,0 +1,17 @@
+a.logo {
+  font-weight: lighter;
+  font-size: 24px;
+  padding-left: 32px;
+  background: url('/media/logo.png') no-repeat left;
+  color: #000;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.nav-pills li.active a {
+  background-color: $accent;
+
+  &:hover { background-color: $accent; }
+}

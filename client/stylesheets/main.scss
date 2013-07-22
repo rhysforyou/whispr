@@ -1,28 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
 
-$accent: #16A085;
+@import 'variables';
+@import 'header';
 
 body {
   padding-top: 20px;
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-a.logo {
-  font-weight: lighter;
-  font-size: 24px;
-  padding-left: 32px;
-  background: url('/media/logo.png') no-repeat left;
-  color: #000;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 a, a:hover {
   color: $accent;
-}
-
-.nav-pills li.active a {
-  background-color: $accent;
 }
