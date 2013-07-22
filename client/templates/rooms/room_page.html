@@ -1,3 +1,5 @@
 <template name="roomPage">
-  {{currentRoom}}
+  {{#each messages}}
+    {{> messageItem}}
+  {{/each}}
 </template>
