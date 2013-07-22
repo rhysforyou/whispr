@@ -7,14 +7,19 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-.logo {
+a.logo {
   font-weight: lighter;
   font-size: 24px;
   padding-left: 32px;
   background: url('/media/logo.png') no-repeat left;
+  color: #000;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-a {
+a, a:hover {
   color: $accent;
 }
 
