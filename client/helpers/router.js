@@ -1,3 +1,7 @@
 Meteor.Router.add({
-  '/': 'home'
+  '/': 'home',
+  '/:_id': {
+    to: 'roomPage',
+    and: function(roomId) { Session.set('currentRoomId', roomId) }
+  }
 })
