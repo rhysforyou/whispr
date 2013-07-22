@@ -1,0 +1,50 @@
+.hero {
+  padding-top: 30px;
+
+  .screenshot {
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .blurb {
+    .text {
+      font-size: 48px;
+      line-height: 65px;
+      font-weight: lighter;
+    }
+
+    .button {
+      display: block;
+      padding: 5px;
+      margin-top: 20px;
+      width: 300px;
+      height: 62px;
+      border-radius: 5px;
+
+      background: $accent;
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+        background: darken($accent, 5);
+      }
+
+      .main {
+        font-size: 28px;
+        line-height: 38px;
+        display: block;
+        text-align: center;
+        font-weight: lighter;
+      }
+
+      .sub {
+        font-size: 16px;
+        opacity: 0.7;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
