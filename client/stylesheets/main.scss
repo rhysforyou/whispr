@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
 
 @import 'variables';
+@import 'bootstrap_overrides';
 @import 'header';
 @import 'home';
 @import 'rooms';
@@ -8,50 +9,6 @@
 
 html, body, input, button, select, textarea {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif !important;
-}
-
-input[type=text] {
-  border: 1px #ddd solid;
-
-  &:focus {
-    border: 1px $accent solid;
-    box-shadow: none;
-  }
-}
-
-.btn {
-  color: white;
-  background: $accent;
-  border: none;
-  box-shadow: none;
-  text-shadow: none;
-
-  &:hover {
-    background: darken($accent, 5);
-  }
-}
-
-.modal {
-  background: none;
-}
-
-.modal-header {
-  background: $accent;
-  color: white;
-  border-radius: 5px 5px 0 0;
-
-  h1, h2, h3 {
-    font-weight: lighter;
-  }
-}
-
-.modal-body {
-  background: white;
-}
-
-.modal-footer {
-  background: #eee;
-  box-shadow: none;
 }
 
 #site-head {
