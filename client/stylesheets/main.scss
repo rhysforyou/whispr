@@ -3,10 +3,14 @@
 @import 'variables';
 @import 'header';
 @import 'home';
+@import 'messages';
+
+html, body, input, button, select, textarea {
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+}
 
 body {
   padding-top: 20px;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 a, a:hover {
