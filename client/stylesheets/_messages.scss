@@ -3,6 +3,10 @@
 }
 
 article.message {
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+
   margin-bottom: 10px;
 
   &:last-child {
@@ -27,6 +31,16 @@ article.message {
     *:last-child {
       margin-bottom: 0;
       padding-bottom: 0;
+    }
+  }
+
+  &.user {
+    .bubble {
+      background: $accent;
+    }
+
+    .author, .body {
+      color: white
     }
   }
 }
