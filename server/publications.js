@@ -5,3 +5,7 @@ Meteor.publish("currentRoom", function(roomId) {
 Meteor.publish("currentRoomMessages", function(roomId) {
   return Messages.find({roomId: roomId})
 })
+
+Meteor.publish("currentRoomUsers", function(roomId) {
+  return Meteor.users.find({"profile.roomIds": roomId})
+})
