@@ -3,13 +3,14 @@
 @import 'variables';
 @import 'header';
 @import 'home';
+@import 'rooms';
 @import 'messages';
 
 html, body, input, button, select, textarea {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif !important;
 }
 
-body {
+#site-head {
   padding-top: 20px;
 }
 
