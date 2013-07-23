@@ -1,4 +1,8 @@
 <template name="roomPage">
+  {{#unless currentUser}}
+    {{> userSignupAnonymous}}
+  {{/unless}}
+
   {{#each messages}}
     {{> messageItem}}
   {{/each}}
