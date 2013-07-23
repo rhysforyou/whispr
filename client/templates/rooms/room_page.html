@@ -1,15 +1,19 @@
 <template name="roomPage">
-  {{#unless currentUser}}
-    {{> userSignupAnonymous}}
-  {{/unless}}
-
   {{> roomHeader}}
 
-  <section id="message-list">
-    {{#each messages}}
-      {{> messageItem}}
-    {{/each}}
-  </section>
-
+  {{#if loggingIn}}
+    {{> spinner}}
+  {{else}}
+    {{#unless currentUser}}
+      {{> userSignupAnonymous}}
+    {{/unless}}
+  
+    <section id="message-list">
+      {{#each messages}}
+        {{> messageItem}}
+      {{/each}}
+    </section>
+  {{/if}}
+  
   {{> messageCompose }}
 </template>
