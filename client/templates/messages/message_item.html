@@ -1,3 +1,12 @@
 <template name="messageItem">
-  {{body}}
+  <article class="message">
+    <div class="bubble">
+      <header>
+        <span class="author">{{author}}</span>
+      </header>
+      <section class="body">
+        {{#markdown}}{{body}}{{/markdown}}
+      </section>
+    </div>
+  </article>
 </template>

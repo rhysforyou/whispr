@@ -3,9 +3,11 @@
     {{> userSignupAnonymous}}
   {{/unless}}
 
-  {{#each messages}}
-    {{> messageItem}}
-  {{/each}}
+  <section id="message-list">
+    {{#each messages}}
+      {{> messageItem}}
+    {{/each}}
+  </section>
 
   {{> messageCompose }}
 </template>
