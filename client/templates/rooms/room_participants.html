@@ -1,0 +1,11 @@
+<template name="roomParticipants">
+  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+    Participants
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    {{#each participants}}
+      <li><a href="#">{{profile.nickname}}</a></li>
+    {{/each}}
+  </ul>
+</template>
