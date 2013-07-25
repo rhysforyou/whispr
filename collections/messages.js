@@ -15,7 +15,8 @@ Meteor.methods({
     message = _.extend(_.pick(message, "body"), {
       createdAt: new Date().getTime(),
       roomId: room._id,
-      userId: user._id
+      userId: user._id,
+      author: user.profile.nickname
     })
 
     if (Meteor.isClient)
