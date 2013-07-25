@@ -43,6 +43,11 @@ article.message {
       color: white
     }
   }
+
+  @media (max-width: 480px) {
+    padding-right: 0;
+    padding-left: 0
+  }
 }
 
 #message-bar {
