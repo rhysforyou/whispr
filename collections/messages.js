@@ -18,6 +18,9 @@ Meteor.methods({
       userId: user._id
     })
 
+    if (Meteor.isClient)
+      message.simulated = true
+
     message._id = Messages.insert(message)
 
     return message
