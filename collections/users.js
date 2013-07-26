@@ -15,12 +15,13 @@ Meteor.methods({
     var password = username + new Date().getTime()
 
     var user = {
-      profile: _.extend(_.pick(userAttributes, "nickname", "email"), {
+      profile: _.extend(_.pick(userAttributes, "nickname"), {
         roomIds: [room._id],
         anonymous: true
       }),
       username: username,
-      password: password
+      password: password,
+      email: userAttributes.email
     }
 
     user._id = Accounts.createUser(user)

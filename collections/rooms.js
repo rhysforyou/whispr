@@ -61,10 +61,10 @@ Meteor.methods({
     // Get users that were in the room and have an email set up
     Meteor.users.find({
       "profile.roomIds": room._id, 
-      email: {$exists: true}
+      emails: {$exists: true}
     }).forEach(function(user) {
       Email.send({
-        to: user.email,
+        to: user.emails[0],
         from: "noreply@whispr.us",
         subject: "[Whispr] Your chat on " + new Date(room.createdAt),
         text: transcript
