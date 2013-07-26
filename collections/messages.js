@@ -24,6 +24,9 @@ Meteor.methods({
 
     message._id = Messages.insert(message)
 
+    // Let the room know there's been new activity
+    Rooms.update(room._id, {$set: {lastActive: new Date().getTime()}})
+
     return message
   }
 })

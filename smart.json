@@ -6,6 +6,7 @@
   "packages": {
     "router": {},
     "scss": {},
-    "spin": {}
+    "spin": {},
+    "cron-tick": {}
   }
 }

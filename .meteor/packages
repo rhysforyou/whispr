@@ -11,3 +11,5 @@ accounts-password
 showdown
 underscore
 spin
+cron-tick
+email
