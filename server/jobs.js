@@ -6,6 +6,7 @@ MyCron.addJob(10 * 60, function() {
   var activeWindow = 1000 * 60 * 60 // 1 hour window
 
   Rooms.find({lastActive: {$lt: now - activeWindow }}).forEach(function(room) {
+    Meteor.call("sendRoomTranscript", room._id)
     Meteor.call("closeRoom", room._id)
   })
 })
